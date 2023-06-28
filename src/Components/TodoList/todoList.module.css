@@ -1,0 +1,29 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoItem {
+  margin-top: 15px;
+}
+
+.input {
+  height: 35px;
+  width: 165px;
+  margin: 40px 0px 0px 10px;
+  padding: 10px;
+  background-color: cadetblue;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.button {
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+}

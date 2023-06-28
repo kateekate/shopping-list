@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@types/css-modules": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "eslint": "^8.43.0",
