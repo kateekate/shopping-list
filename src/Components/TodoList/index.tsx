@@ -30,6 +30,9 @@ export default function TodoList() {
     setTodos([...todos, newTodo]);
     setInput("");
   };
+
+  const isValid = input.length > 3 && input.length < 100;
+
   return (
     <div className={styles.mainContainer}>
       <h1>TodoList</h1>
@@ -52,7 +55,11 @@ export default function TodoList() {
         value={input}
         onChange={(e) => setInput(e.currentTarget.value)}
       />
-      <button className={styles.button} onClick={handleClick}>
+      <button
+        disabled={!isValid}
+        className={styles.button}
+        onClick={handleClick}
+      >
         Add
       </button>
     </div>
